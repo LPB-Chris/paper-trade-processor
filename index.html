@@ -1292,4 +1292,86 @@ function showTab(tab) {
   if (tab === 'history') { renderHistory(); }
 }
 
-// ═════════════════════════════════════════════�
+// ═// ═// ═// ═// ═// ═// ═// ═// ═// ═// ═// ═// ═// ═// ═// ═// ═// ═// ═// ═// ═// ═// ═// ═// ═// ═// ═// ═// ═// ═// ═// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+// LIBRARY LOAD CHECK
+// ═
+(function checkLibs() {
+  const xlsxOk  = typeof XLSX !== 'undefined';
+  const chartOk = typeof Chart !== 'undefined';
+  const excelOk = typeof ExcelJS !== 'undefined';
+  const el = document.getElementById('libStatus');
+  if (xlsxOk && chartOk && excelOk) {
+    if (el) el.style.display = 'none';
+  } else {
+    if (el) {
+      el.style.background='#f8d7da'; el.style.color='#58151c'; el.style.borderColor='#f1aeb5';
+      el.textContent = 'Library load failed. Please reload.';
+    }
+  }
+  updateHistCount();
+})();
+</script>
+</body>
+</html>
