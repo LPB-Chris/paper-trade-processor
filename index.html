@@ -437,7 +437,9 @@ function shortenCompany(name) {
     'CÔNG TY CỔ PHẦN THƯƠNG MẠI','CÔNG TY CỔ PHẦN','CÔNG TY TNHH MTV',
     'CÔNG TY TNHH','CÔNG TY CP','CÔNG TY',
     // unaccented
-    'CHI NHANH CONG TY TNHH','CONG TY CO PHAN','CONG TY TNHH','CONG TY'
+    'CHI NHANH CONG TY TNHH','CONG TY CO PHAN','CONG TY TNHH','CONG TY',
+    // abbreviated forms
+    'CTY TNHH MTV','CTY TNHH','CTY CP','CTY Cổ PHẦN','CTY'
   ];
   for (const p of prefixes) {
     if (n.startsWith(p)) { n = n.slice(p.length).trim(); break; }
@@ -451,7 +453,9 @@ function shortenCompany(name) {
     'THƯƠNG MẠI DỊCH VỤ','DỊCH VỤ THƯƠNG MẠI',
     'XUẤT NHẬP KHẨU THƯƠNG MẠI','THƯƠNG MẠI XUẤT NHẬP KHẨU',
     'XUẤT NHẬP KHẨU','THƯƠNG MẠI','SẢN XUẤT','DỊCH VỤ','CÔNG NGHIỆP','ĐẦU TƯ',
+    'IN VÀ BAO BÌ','IN ẤN VÀ BAO BÌ','BAO BÌ VÀ IN','IN ẤN','BAO BÌ',
     // unaccented
+    'IN VA BAO BI','IN AN VA BAO BI','BAO BI VA IN','IN AN','BAO BI',
     'THUONG MAI VA SAN XUAT','SAN XUAT VA THUONG MAI',
     'THUONG MAI SAN XUAT DICH VU','SAN XUAT THUONG MAI DICH VU',
     'THUONG MAI SAN XUAT','SAN XUAT THUONG MAI',
